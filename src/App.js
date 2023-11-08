@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import fruitArr from "./fruitArr"
+import Fruit from "./components/Fruit"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    const result = fruitArr.map(objItem => {
+        return (
+            <Fruit details={objItem} />
+        )
+    })
+
+    return (
+        <div style={{display: "flex"}}>{result}</div>
+    )
 }
-
-export default App;
