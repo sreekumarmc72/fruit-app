@@ -4,7 +4,7 @@ export default [
     {
       "fruit": "Apple",
       "color": "Red",
-      "taste": "Sweet",
+      "taste": "Sweet1",
       "price": 1.5,
       "inSeason": true,
       "vitamins": ["A", "C"]
